@@ -1,0 +1,24 @@
+<p>
+  home works!
+</p>
+
+<div *ngxPermissionsOnly="['ADMIN', 'GUEST']">
+  <div>ADMIN と GUEST が見ることができるテキストです</div>
+</div>
+
+<ng-template ngxPermissionsOnly="ADMIN">
+  <div>ADMIN だけが見ることができます</div>
+</ng-template>
+
+<ng-template ngxPermissionsOnly="anotherPermissions">
+  <div>anotherPermissions だけが見ることができます</div>
+</ng-template>
+
+<ng-template ngxPermissionsOnly="AnotherOne">
+  <div>AnotherOne だけが見ることができます</div>
+</ng-template>
+
+<ng-template [ngxPermissionsExcept]="['JOHNY']">
+ <div>JOHNY 以外は見ることができます</div>
+</ng-template>
+
