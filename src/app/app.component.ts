@@ -14,7 +14,8 @@ export class AppComponent {
   ) {}
   
   ngOnInit(): void {
-    const perm = ["ADMIN", "EDITOR"];
+    // const perm = ["ADMIN", "EDITOR"];
+    const perm = ["EDITOR"];
     this.permissionsService.loadPermissions(perm);
     // this.permissionsService.loadPermissions(["GUEST"]);
   //   this.permissionsService.addPermission(['anotherPermissions', 'AnotherOne'], (permissionName, permissionsObject) => {

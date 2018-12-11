@@ -10,7 +10,13 @@
   <ng-template ngxPermissionsOnly="ADMIN">
     <a routerLink="/admin">Admin</a>
   </ng-template>
+  
+  <a routerLink="/admin" *ngxPermissionsOnly="['ADMIN','EDITOR']">Admin</a>
 </nav>
+
+<div *ngxPermissionsOnly="['GUEST']">
+  You can see this text congrats
+</div>
 
 <router-outlet></router-outlet>
 

@@ -21,7 +21,7 @@ const routes: Routes = [
         only: 'ADMIN',
         // redirectTo: '/no-authorization',
         redirectTo: {
-          navigationCommands: '/no-authorization',
+          navigationCommands: ['/no-authorization'],
           navigationExtras: {
             skipLocationChange: true
           }
